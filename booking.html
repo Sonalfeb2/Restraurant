@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function booking()
+{
+alert("you have Successfully Booked");
+window.location.href="page.html";
+} 
+</script>
+<script src="javascript/page.js"></script>
+<link rel="stylesheet" href="Css/page.css">
+<link rel="stylesheet" href="Css/booking.css">
+<link rel="stylesheet" href="Css/icon.css">
+<link rel="stylesheet" href="Css/button.css">
+<link rel="stylesheet" href="Css/ratings.css">
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:black;">Good 4 You!!</h1>
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="billing.html">Menu</a>
+  <a href="feedback.html">feedbacks</a>
+  <a href="contact us.html">contact us</a>
+  <a href="login.html" style="float:right">Login/Signup</a>
+</div>
+<center><br></br>
+<h1>Booking </h1>
+<b style="font-size:150%; text-align:right;">Number of Person:</b>
+<select name="product">
+<option selected>--Select--</option>
+<option> 1</option>
+<option> 2</option>
+<option> 3</option>
+<option> 4 </option>
+<option> 5 </option>
+<option> 6</option>
+<option> 7</option>
+<br><br><br>
+</select><br><br><br>
+<b style="font-size:150%; text-align:right;">Number of Tables:</b>
+<select name="product">
+<option selected>--Select--</option>
+<option> 1</option>
+<option> 2</option>
+<option> 3</option>
+<option> 4 </option>
+<option> 5 </option>
+<option> 6</option>
+<option> 7</option>
+<br><br><br>
+</select>
+
+<b style="font-size:150%; text-align:right;"> </b> 
+
+<br> <br> <br>
+<b style="font-size:150%; text-align:right;"> Payment Mode:</b>
+<label><input type=radio name="Gender" value="Debit Card" style="font-size:200%"> Debit Card</label> 
+<label><input type=radio name="Gender" value="Credit Card" style="font-size:300%"> Credit Card</label>
+</br></br></br>
+<form method="get" > 
+<b style="font-size:150%; text-align:right;">NAME ON CARD:</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <required>
+<input type="text" id="num" required><br><br><br>
+<b style="font-size:150%; text-align:right;"> EXPIRY DATE:</b>&nbsp &nbsp  
+<input type="date" name="date" min="2016-11-9" required><br><br><br>
+<b style="font-size:150%; text-align:right;">ENTER CVV NUMBER  :</b>&nbsp &nbsp
+<input type="text" id="num" required><br><br><br>
+<button type="submit" class="button" onclick="booking()">submit</button></center></center></form>
+</body>
+	
+</head>
+</html>
+

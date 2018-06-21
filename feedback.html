@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Feedback Form </title>
+               <link rel="stylesheet" href="Css/form.css" >
+        <script src="javascript/form.js"></script>
+    </head>
+    <body >
+                    <h1 align="center">Feedback</h1> 
+                    <p align="center" style="font-size:20px"> Please provide your feedback below: </p>
+                    <form role="form" method="post" action="home.html">
+                <div class="form">
+                                <label align="center">How do you rate your overall experience?</label>
+                                <p>
+   <br>                                 
+                                        <input type="radio" name="experience"  value="bad" >
+                                        Bad 
+                 
+                                        <input type="radio" name="experience" value="average" >
+                                        Average 
+                                 
+                                        <input type="radio" name="experience"  value="good" >
+                                        Good 
+                                </p>
+                    
+                    <br>
+                                 Comments:
+                                <textarea type="textarea" name="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                   <br>
+                                Your Name:
+                                <input type="text"  name="name" required><br>
+                         
+                             Email:
+                                <input type="email" name="email" required>
+                       
+                         <br>       <button type="submit" class="button" >Post </button></div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

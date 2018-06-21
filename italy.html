@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Css/home.css">
+	<title>home</title>
+</head>
+<body>
+	<div id="heading">
+		<div id="heading1">
+			<img src="Images/home.png" id="logo">
+		</div>
+		<div id="heading3">
+			LOVE ITALY
+		</div>
+	</div>
+	<div id="menu">
+			|<a href="page.html" class="menucontent">Home</a>|
+			<a href="about.html" class="menucontent">About Us </a>|
+			<a href="contact us.html" class="menucontent">Contact us</a>|
+			
+			<a href="feedback.html" class="menucontent">feedback </a>|
+			<a href="login.html" class="menucontent">Signup/Login </a>
+	</div>
+	<div id="imagegallery">
+		<img class="imagegallery1" src="Images/loveitaly.jpg" id="image3">
+		<img class="imagegallery1" src="Images/li1.jpg" id="image3">
+		<img class="imagegallery1" src="Images/li2.jpg" id="image3">
+		<img class="imagegallery1" src="Images/li3.jpg" id="image3">
+		<img class="imagegallery1" src="Images/sh5.jpg" id="image3">
+		<img class="imagegallery1" src="Images/sh6.jpg" id="image3">
+		<img class="imagegallery1" src="Images/sh7.jpg" id="image3">
+		<img class="imagegallery1" src="Images/sh8.jpg" id="image3">
+		<button id="gallerybutton1" onclick="plusDivs(-1)">&#10094;</button>
+ 		 <button id="gallerybutton2" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+	<div id="container1">
+		<div id="p1">
+			<h4 style="color: black;font-size: 40px;padding-left: 20px;">ABOUT</h4><h4 style="color: #46CAE1;font-size: 40px;padding-bottom: 20px;padding-left: 20px;">US</h4>
+		<p style="padding-left: 20px;padding-bottom: 20px;">LoveItaly was founded in 2014 by LVenture Group, a holding company quoted on the Italian Stock Market that participates in digital start-up businesses, and a group of enthusiasts from diverse professional backgrounds who are passionate about Italy’s cultural heritage and seek to make the conservation of Italy’s outstanding artistic treasures their main focus. The initial font of inspiration came from the archaeological and conservation consultancy work of Richard Hodges, one of the founding Members of LoveItaly, President of the American University of Rome, an Executive Committee Member of the Herculaneum Conservation Project and Counsel to the Packard Humanities Institute.
+
+</p>
+		<div id="appointmentbox">
+			<div id="appointmentbox1"></div>
+		</div>
+		</div>
+		<div id="p2">
+			<img src="Images/9.jpg">
+		</div>
+	</div>
+	<div id="container2">
+		<div id="q1">
+			<b><b><p style="font-size: 50px;">8652</p>
+			<p style="font-size: 15px">EXCELLANT</p></b></b>
+		</div>
+		<div id="q2">
+			<b><b><p style="font-size: 50px;">7533</p>
+			<p style="font-size: 15px">VERYGOOD</p></b></b>
+		</div>
+		<div id="q3">
+			<b><b><p style="font-size: 50px;">4423</p>
+			<p style="font-size: 15px">AVERAGED</p></b></b>
+		</div>
+	</div>
+	<div id="container3">
+		<div id="container31">
+			<h4 style="color: black; font-size: 30px;">OUR BEST</h4><h4 style="color: #46CAE1;font-size: 30px">SERVICES</h4><br><br>
+		<p style="padding-left: 40px;padding-right: 40px;">In this restaurant our service available everytime.You can choose any restaurant and find the location .In this site all best restaurant are available here with best food .Every facilities are avaiable according to the customer </p>
+		</div>
+	</div>
+	<div id="container4">
+		<div class="grid"><img src="Images/10.jpg" class="grid_img">
+			<div class="grid_text">
+				<h4 class="texthover">Customer feedback</h4><br>
+				<p>Successful restaurants cater to their customers. They go out of their way to provide exceptional service, quality food and superb experiences that increase customer loyalty with the likelihood to return. But restaurants don’t deliver five star experiences on their own – they look to their customers for guidance.</p>
+			</div>
+		</div>
+		<div class="grid"><img src="Images/sr13.jpg" class="grid_img">
+				<div class="grid_text">
+				<h4 class="texthover">Our services</h4><br>
+				<p>The restaurant service practitioner provides high quality food and drink service to guests. A food service practitioner generally works in the commercial sector, offering a range of services to customers.</p>
+			</div>
+		</div>
+		<div class="grid"><img src="Images/12.jpg" class="grid_img">
+				<div class="grid_text">
+				<h4 class="texthover">Contact us</h4><br>
+				<pre> 
+Wagah Border, National Highway 1, Amritsar, Punjab 143108, India
+			+91-183-2382000
+
++91 9815300088
+				</pre>
+			</div>
+		</div>
+		
+		
+		
+		
+<script type="text/javascript">
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("imagegallery1");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>login</title>
+
+<script>function login()
+{
+alert("you have Successfully Loged In");
+window.location.href="page.html";
+} </script>
+
+<link href="Css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+  <div class="profileLogo"> 
+    
+    <p class="logoPlaceholder"><span>Customer Login</span></p>
+  </div>
+ <div id="profilebox">
+    <div class="profilePhoto"> 
+    <img src="Images/Users-icon.png" alt="sample" id="profilePhoto1"> 
+  <section class="profileHeader">
+    <h1>User Name : </h1><input type="text" placeholder="Enter Your Name" class="profilename">
+    <h1>Password : </h1><input type="Password" placeholder="Please Enter Your Password " class="profilename"><br><br>
+    <div id="loginbutton" onclick="login()">Login</div><br>
+    <a href="#" class="profileHeader1">Forgot The Password?</a><br><br>
+    <a href="logiinform.html" class="profileHeader1">Create An Account</a>
+  </section>
+  </div>
+ </div>
+  
+</body>
+</html>

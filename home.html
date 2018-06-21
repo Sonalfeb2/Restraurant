@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<style>
+	body{
+	font-size:30px;
+	}
+	#b{
+	 width: 40%;
+      height: 500px;
+      background-color: skyblue;
+opacity:0.7;	  
+	}
+	
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1;}
+	h1{opacity:1;
+	}
+	</style>
+	<script>
+	function signup()
+	{window.location.href="logiinform.html";
+	}
+	function login()
+	{window.location.href="login.html";
+	}
+	function go()
+	{window.location.href="page.html";
+	}
+	</script>
+</head>
+<body background="Images/back.jpg">
+	<script type="text/javascript">
+var imageCount = 0;
+var currentImage = 0;
+var images = new Array();
+var preLoadImages = new Array();
+images[0] = 'Images/A1.JPG';
+images[1] = 'Images/A2.JPG';
+images[2] = 'Images/A3.JPG';
+images[3] = 'Images/A4.JPG';
+images[4] = 'Images/A5.JPG';
+for (var i = 0; i < images.length; i++)
+{
+   if (images[i] == "")
+      break;
+
+   preLoadImages[i] = new Image();
+   preLoadImages[i].src = images[i];
+   imageCount++;
+}
+function startSlideShow()
+{
+   if (document.body && imageCount > 0)
+   {
+      document.body.style.backgroundImage = "url("+images[currentImage]+")";    
+      document.body.style.backgroundAttachment = "fixed";
+      document.body.style.backgroundRepeat = "repeat";
+      document.body.style.backgroundPosition = "center";
+   
+      currentImage = currentImage + 1;
+      if (currentImage > (imageCount-1))
+      { 
+         currentImage = 0;
+      }
+      setTimeout('startSlideShow()', 4000);
+   }
+}
+startSlideShow();
+</script>
+<style type="text/css">
+	
+	#main
+	{
+		margin-top: 150px;
+		background-color: yellow;
+		font-family: impact;
+		font-size: 20px;
+	}
+</style>
+<center>
+<div id="b"><h1>Welcome To <br>Good For You!!</h1>
+<img src="Images/smiley.png" height="200px" width="200px">
+<br>
+<button class="btn" onclick="login()">LogIn</button>
+<button class="btn" onclick="signup()">SignUp</button>
+<button class="btn" onclick="go()">Go To Main Page</button></div></center>
+</body>
+</html>
