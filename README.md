@@ -2,5 +2,3 @@
 
 2nd Semester
 College project
-
-By Sonal Bansal 
