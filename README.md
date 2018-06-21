@@ -3,4 +3,4 @@
 2nd Semester
 College project
 
-By $onal Bansal 
+By Sonal Bansal 
